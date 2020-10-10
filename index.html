@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Calculadora de contribuciones</h1>
+    </div>
+
+    <div class="body">
+        <label>¿Cuánto quieres dar de primicia?</label>
+        <br />
+        <select id="tipoDePrimicia">
+            <option>Un día</option>
+            <option>Una hora</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label>Salario mensual</label>
+        <br/>
+        <input type="number" id="salario"></input>
+        <button id="calcularContribuciones">Calcular</button>
+        <br />
+        <br />
+
+        <ul id="resultados">
+            <li><b>Diezmo:</b> RD$
+                <a id="diezmo"></a>
+            </li>
+
+            <li><b>Primicia: </b> RD$
+                <a id="primicia"></a>
+            </li>
+            <li><b>Total: </b> RD$
+                <a id="total"></a>
+            </li>
+        </ul>
+
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
